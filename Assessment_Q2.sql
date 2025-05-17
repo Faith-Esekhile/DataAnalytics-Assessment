@@ -1,3 +1,4 @@
+-- Categorize customers by transaction frequency
 WITH customer_transactions AS (
     SELECT 
         u.id AS customer_id,
