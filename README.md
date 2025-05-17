@@ -9,7 +9,7 @@ Approach
 - Converted amounts from kobo to currency by dividing by 100
 - Ordered by total deposits to show highest-value customers first
 
-Key Note: Ensured we only count distinct plans per customer and only successful transactions.
+Challenge: Ensuring we only count distinct plans per customer and only successful transactions.
 
 ## Question 2: Transaction Frequency Analysis
 Approach
@@ -19,7 +19,7 @@ Approach
 - Categorized customers into frequency buckets
 - Aggregated results by frequency category
 
-Key Note: Properly handled customers with very short tenure to avoid skewing averages.
+Challenge: Properly handling customers with very short tenure to avoid skewing averages.
 
 ## Question 3: Account Inactivity Alert
 Approach 
@@ -29,7 +29,7 @@ Approach
 - Included accounts with no transactions but created >1 year ago
 - Ordered by longest inactive first
 
-Key Note: Distinguished between truly inactive accounts versus new accounts without transactions yet.
+Challenge: Distinguishing between truly inactive accounts versus new accounts without transactions yet.
 
 ## Question 4: Customer Lifetime Value (CLV) Estimation
 Approach
@@ -40,4 +40,4 @@ Approach
 - Converted amounts from kobo to currency
 - Ordered by highest estimated CLV first
 
-Key Note: Ensured the formula correctly accounts for varying customer tenure and transaction patterns.
+Challenge: Ensuring the formula correctly accounts for varying customer tenure and transaction patterns.
