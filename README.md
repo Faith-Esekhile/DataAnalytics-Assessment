@@ -15,7 +15,7 @@ Key Note: Ensured we only count distinct plans per customer and only successful 
 Approach
 - Calculated customer tenure in months since signup
 - Counted all successful transactions per customer
-- Derived transactions per month metric (handling division by zero)
+- Derived transactions per month
 - Categorized customers into frequency buckets
 - Aggregated results by frequency category
 
@@ -23,7 +23,7 @@ Key Note: Properly handled customers with very short tenure to avoid skewing ave
 
 ## Question 3: Account Inactivity Alert
 Approach 
-- Identified active accounts (not deleted/archived)
+- Identified active accounts
 - Found most recent successful transaction for each account
 - Calculated days since last transaction
 - Included accounts with no transactions but created >1 year ago
