@@ -1,3 +1,4 @@
+-- Find active accounts with no transactions in the last year
 WITH last_transactions AS (
     SELECT 
         p.id AS plan_id,
