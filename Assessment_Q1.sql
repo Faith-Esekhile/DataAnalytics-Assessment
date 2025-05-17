@@ -14,7 +14,7 @@ WHERE
     p.is_deleted = 0 
     AND p.is_archived = 0
     AND s.confirmed_amount > 0
-    AND s.transaction_status = 'success'  
+    AND s.transaction_status = 'success'  -- Only successful transactions
 GROUP BY 
     u.id, u.first_name, u.last_name
 HAVING 
