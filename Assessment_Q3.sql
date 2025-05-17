@@ -17,7 +17,7 @@ WITH last_transactions AS (
     WHERE 
         p.is_deleted = 0 
         AND p.is_archived = 0
-        AND p.status_id = 1
+        AND p.status_id = 1      -- Assuming 1 means active status
         AND (s.id IS NULL OR s.transaction_status = 'success')
     GROUP BY 
         p.id, p.owner_id, p.created_on, type
