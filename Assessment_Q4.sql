@@ -1,3 +1,4 @@
+-- Calculate estimated Customer Lifetime Value
 WITH customer_stats AS (
     SELECT 
         u.id AS customer_id,
