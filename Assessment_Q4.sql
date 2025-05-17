@@ -4,7 +4,7 @@ WITH customer_stats AS (
         CONCAT(u.first_name, ' ', u.last_name) AS name,
         TIMESTAMPDIFF(MONTH, u.date_joined, CURRENT_DATE) AS tenure_months,
         COUNT(s.id) AS total_transactions,
-        SUM(s.confirmed_amount)/100 AS total_deposit_value
+        SUM(s.confirmed_amount)/100 AS total_deposit_value  -- Convert from kobo to currency
     FROM 
         users_customuser u
     LEFT JOIN 
